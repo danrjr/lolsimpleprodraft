@@ -1,0 +1,192 @@
+*{
+    background-color: #2d3239;
+    overflow-y: hidden;
+}
+.champion_imgs {
+    display: flex;
+    margin: 0 auto; 
+    width: 850px; 
+    height: 450px;
+    flex-wrap: wrap;
+    padding: 10px;
+    gap: 5px;
+    overflow-y: auto; /* Adiciona a barra de rolagem vertical */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: start; /* Centraliza verticalmente */
+}
+
+.champion_imgs img {
+    cursor: pointer;
+}
+
+.champion_ui {
+    display: flex; 
+    justify-content: space-around;
+    align-items: center;
+}
+.champion_roles{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 5px;
+}
+
+
+.champion_roles img{
+    cursor: pointer
+}
+
+.champion_imgs::-webkit-scrollbar {
+    width: 5px; /* Largura da barra de rolagem */
+  }
+  
+  .champion_imgs::-webkit-scrollbar-track {
+    background: transparent; /* Define o fundo da barra de rolagem como transparente */
+  }
+  
+  .champion_imgs::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.2); /* Cor da "thumb" (parte rolável) com transparência */
+    border-radius: 10px;
+  }
+  
+  .champion_imgs::-webkit-scrollbar-thumb:hover {
+    background: rgba(0, 0, 0, 0.4); /* Cor da "thumb" ao passar o mouse com transparência */
+  }
+
+.ban_container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+    position: sticky;
+    bottom: 0;
+}
+
+.ban_container button {
+    margin-top: 20px;
+    padding-inline: 50px;
+    height: 50px;
+    cursor: pointer;
+    background-color: #4CAF50; /* Verde */
+    color: white; /* Cor do texto */
+    border: none; /* Remove bordas padrão */
+    border-radius: 5px; /* Bordas arredondadas */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Transição suave */
+}
+
+.ban_container button:hover {
+    background-color: #45a049; /* Verde mais escuro no hover */
+}
+
+.ban_container button:active {
+    background-color: #3e8e41; /* Verde mais escuro no clique */
+    transform: scale(1); /* Restaura tamanho no clique */
+}
+.ban_container .ban_blue_side {
+    display: flex;
+    gap: 5px;
+}
+
+.ban_container .ban_blue_side {
+    display: flex;
+    gap: 5px;
+}
+
+.ban_container .ban_red_side {
+    display: flex;
+    gap: 5px;
+}
+
+.pick_container{
+    display: flex;
+    position: relattive;
+}
+
+.pick_container .pick_blue_side{
+    display: flex; 
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+
+.pick_container .pick_red_side{
+    display: flex; 
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.apply_red_border{
+    border: 2px solid red;
+}
+
+.apply_blue_border{
+    border: 2px solid blue;
+}
+
+.pick_red_side img:nth-child(4) {
+    margin-top: 10px; /* ajuste o valor conforme necessário */
+}
+
+.blue_strip{
+    z-index: 10;
+    background-color: blue;
+    width: 100%;
+    height: 10px;
+    position: absolute;
+    top: 0
+}
+
+.red_strip{
+    z-index: 10;
+    background-color: red;
+    width: 100%;
+    height: 10px;
+    position: absolute;
+    top: 0
+}
+
+.champion_imgs img.selected {
+    filter: grayscale(100%);
+    pointer-events: none; /* Impede que a imagem seja clicada novamente */
+}
+
+.black_white {
+    filter: grayscale(100%);
+}
+
+.selected {
+    box-shadow: 0 0 2px 2px rgba(255, 215, 0, 0.8); /* Sombra mais suave e redonda */
+    border-radius: 25%; /* Certifique-se de que o ícone também seja arredondado */
+    transition: box-shadow 0.3s ease-in-out; /* Transição suave */
+}
+
+.hidden_button{
+    display: none;
+}
+.champion_search {
+    display: flex;
+    justify-content: center;
+}
+
+.champion_search input {
+    width: 200px; /* Define a largura do input */
+    padding: 10px; /* Adiciona padding */
+    font-size: 16px; /* Define o tamanho da fonte */
+    border: 2px solid #ccc; /* Borda inicial */
+    border-radius: 5px; /* Bordas arredondadas */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adiciona sombra */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Transição suave para borda e sombra */
+    color: white;
+}
+
+.champion_search input:focus {
+    border-color: grey; /* Muda a cor da borda quando focado */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); /* Aumenta a sombra quando focado */
+    outline: none; /* Remove o outline padrão */
+}
+
+.champion_search input::placeholder {
+    color: #999; /* Cor do placeholder */
+}
