@@ -222,7 +222,7 @@ const Champion = () => {
                         src={`https://draftlol.dawe.gg/static/media/position-${role.name}.${role.code}.svg`}
                         alt={role.name}
                         onClick={() => setSelectedRole(selectedRole === role.name ? '' : role.name)}
-                        className={selectedRole === role.name ? 'selected' : ''}
+                        className={selectedRole === role.name ? 'selected_icon' : ''}
                     />
                 ))}
                 </div>
