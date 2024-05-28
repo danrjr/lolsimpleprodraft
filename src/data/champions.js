@@ -96,7 +96,7 @@ export const data = [
     {name: "Ornn", roles: ['top', 'utility'], id: 96},
     {name: "Pantheon", roles: ['top', 'jungle', 'middle'], id: 98},
     {name: "Poppy", roles: ['top','jungle', 'utility'], id: 99},
-    {name: "Pyke", roles: ['bottom'], id: 100},
+    {name: "Pyke", roles: ['utility'], id: 100},
     {name: "Qiyana", roles: ['middle', 'jungle'], id: 101},
     {name: "Quinn", roles: ['top'], id: 102},
     {name: "Rakan", roles: ['utility'], id: 103},
