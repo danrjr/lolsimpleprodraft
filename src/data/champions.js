@@ -10,6 +10,7 @@ export const data = [
     {name: "Aphelios", roles: ['bottom'], id: 8},
     {name: "Ashe", roles: ['bottom'], id: 9},
     {name: "AurelionSol", roles: ['middle'], id: 10},
+    {name: "Aurora", roles: ['top', 'middle'], id: 170},
     {name: "Azir", roles: ['middle'], id: 11},
     {name: "Bard", roles: ['utility'], id: 12},
     {name: "Belveth", roles: ['jungle'], id: 13},
