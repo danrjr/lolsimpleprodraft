@@ -21,6 +21,7 @@ const Champion = () => {
         { name: "bottom", code: '21509e3883c16b6fc3d0' },
         { name: "utility", code: 'c5a52aaac8d51b65adf7' }
     ]);
+    const patch = "14.14.1";
 
     const [champion, setChampion] = useState([]);
     const [selectedChampion, setSelectedChampion] = useState(null); // Estado para o campeão selecionado
@@ -62,64 +63,64 @@ const Champion = () => {
         const newPickRedSide = [...pickRedSide];
     
         if (currentBanRound === 0) {
-            newBanBlueSide[0] = `https://ddragon.leagueoflegends.com/cdn/14.14.1/img/champion/${champ.name}.png`;
+            newBanBlueSide[0] = `https://ddragon.leagueoflegends.com/cdn/${patch}/img/champion/${champ.name}.png`;
             setBanBlueSide(newBanBlueSide);
         } else if (currentBanRound === 1) {
-            newBanRedSide[4] = `https://ddragon.leagueoflegends.com/cdn/14.14.1/img/champion/${champ.name}.png`;
+            newBanRedSide[4] = `https://ddragon.leagueoflegends.com/cdn/${patch}/img/champion/${champ.name}.png`;
             setBanRedSide(newBanRedSide);
         } else if (currentBanRound === 2) {
-            newBanBlueSide[1] = `https://ddragon.leagueoflegends.com/cdn/14.14.1/img/champion/${champ.name}.png`;
+            newBanBlueSide[1] = `https://ddragon.leagueoflegends.com/cdn/${patch}/img/champion/${champ.name}.png`;
             setBanBlueSide(newBanBlueSide);
         } else if (currentBanRound === 3) {
-            newBanRedSide[3] = `https://ddragon.leagueoflegends.com/cdn/14.14.1/img/champion/${champ.name}.png`;
+            newBanRedSide[3] = `https://ddragon.leagueoflegends.com/cdn/${patch}/img/champion/${champ.name}.png`;
             setBanRedSide(newBanRedSide);
         } else if (currentBanRound === 4) {
-            newBanBlueSide[2] = `https://ddragon.leagueoflegends.com/cdn/14.14.1/img/champion/${champ.name}.png`;
+            newBanBlueSide[2] = `https://ddragon.leagueoflegends.com/cdn/${patch}/img/champion/${champ.name}.png`;
             setBanBlueSide(newBanBlueSide);
         } else if (currentBanRound === 5) {
-            newBanRedSide[2] = `https://ddragon.leagueoflegends.com/cdn/14.14.1/img/champion/${champ.name}.png`;
+            newBanRedSide[2] = `https://ddragon.leagueoflegends.com/cdn/${patch}/img/champion/${champ.name}.png`;
             setBanRedSide(newBanRedSide);
         } else if (currentBanRound === 6) {
-            newPickBlueSide[0] = `https://ddragon.leagueoflegends.com/cdn/14.14.1/img/champion/${champ.name}.png`;
+            newPickBlueSide[0] = `https://ddragon.leagueoflegends.com/cdn/${patch}/img/champion/${champ.name}.png`;
             setPickBlueSide(newPickBlueSide);
         } else if (currentBanRound === 7) {
-            newPickRedSide[0] = `https://ddragon.leagueoflegends.com/cdn/14.14.1/img/champion/${champ.name}.png`;
+            newPickRedSide[0] = `https://ddragon.leagueoflegends.com/cdn/${patch}/img/champion/${champ.name}.png`;
             setPickRedSide(newPickRedSide);
         } else if (currentBanRound === 8) {
-            newPickRedSide[1] = `https://ddragon.leagueoflegends.com/cdn/14.14.1/img/champion/${champ.name}.png`;
+            newPickRedSide[1] = `https://ddragon.leagueoflegends.com/cdn/${patch}/img/champion/${champ.name}.png`;
             setPickRedSide(newPickRedSide);
         } else if (currentBanRound === 9) {
-            newPickBlueSide[1] = `https://ddragon.leagueoflegends.com/cdn/14.14.1/img/champion/${champ.name}.png`;
+            newPickBlueSide[1] = `https://ddragon.leagueoflegends.com/cdn/${patch}/img/champion/${champ.name}.png`;
             setPickBlueSide(newPickBlueSide);
         } else if (currentBanRound === 10) {
-            newPickBlueSide[2] = `https://ddragon.leagueoflegends.com/cdn/14.14.1/img/champion/${champ.name}.png`;
+            newPickBlueSide[2] = `https://ddragon.leagueoflegends.com/cdn/${patch}/img/champion/${champ.name}.png`;
             setPickBlueSide(newPickBlueSide);
         } else if (currentBanRound === 11) {
-            newPickRedSide[2] = `https://ddragon.leagueoflegends.com/cdn/14.14.1/img/champion/${champ.name}.png`;
+            newPickRedSide[2] = `https://ddragon.leagueoflegends.com/cdn/${patch}/img/champion/${champ.name}.png`;
             setPickRedSide(newPickRedSide);
         } else if (currentBanRound === 12) {
-            newBanRedSide[1] = `https://ddragon.leagueoflegends.com/cdn/14.14.1/img/champion/${champ.name}.png`;
+            newBanRedSide[1] = `https://ddragon.leagueoflegends.com/cdn/${patch}/img/champion/${champ.name}.png`;
             setBanRedSide(newBanRedSide);
         } else if (currentBanRound === 13) {
-            newBanBlueSide[3] = `https://ddragon.leagueoflegends.com/cdn/14.14.1/img/champion/${champ.name}.png`;
+            newBanBlueSide[3] = `https://ddragon.leagueoflegends.com/cdn/${patch}/img/champion/${champ.name}.png`;
             setBanBlueSide(newBanBlueSide);
         } else if (currentBanRound === 14) {
-            newBanRedSide[0] = `https://ddragon.leagueoflegends.com/cdn/14.14.1/img/champion/${champ.name}.png`;
+            newBanRedSide[0] = `https://ddragon.leagueoflegends.com/cdn/${patch}/img/champion/${champ.name}.png`;
             setBanRedSide(newBanRedSide);
         } else if (currentBanRound === 15) {
-            newBanBlueSide[4] = `https://ddragon.leagueoflegends.com/cdn/14.14.1/img/champion/${champ.name}.png`;
+            newBanBlueSide[4] = `https://ddragon.leagueoflegends.com/cdn/${patch}/img/champion/${champ.name}.png`;
             setBanBlueSide(newBanBlueSide);
         } else if (currentBanRound === 16) {
-            newPickRedSide[3] = `https://ddragon.leagueoflegends.com/cdn/14.14.1/img/champion/${champ.name}.png`;
+            newPickRedSide[3] = `https://ddragon.leagueoflegends.com/cdn/${patch}/img/champion/${champ.name}.png`;
             setPickRedSide(newPickRedSide);
         } else if (currentBanRound === 17) {
-            newPickBlueSide[3] = `https://ddragon.leagueoflegends.com/cdn/14.14.1/img/champion/${champ.name}.png`;
+            newPickBlueSide[3] = `https://ddragon.leagueoflegends.com/cdn/${patch}/img/champion/${champ.name}.png`;
             setPickBlueSide(newPickBlueSide);
         } else if (currentBanRound === 18) {
-            newPickBlueSide[4] = `https://ddragon.leagueoflegends.com/cdn/14.14.1/img/champion/${champ.name}.png`;
+            newPickBlueSide[4] = `https://ddragon.leagueoflegends.com/cdn/${patch}/img/champion/${champ.name}.png`;
             setPickBlueSide(newPickBlueSide);
         } else if (currentBanRound === 19) {
-            newPickRedSide[4] = `https://ddragon.leagueoflegends.com/cdn/14.14.1/img/champion/${champ.name}.png`;
+            newPickRedSide[4] = `https://ddragon.leagueoflegends.com/cdn/${patch}/img/champion/${champ.name}.png`;
             setPickRedSide(newPickRedSide);
         }
     };
@@ -143,64 +144,64 @@ const Champion = () => {
             const newPickRedSide = [...pickRedSide];
 
             if (currentBanRound === 0) {
-                newBanBlueSide[0] = `https://ddragon.leagueoflegends.com/cdn/14.14.1/img/champion/${temporarySelection.name}.png`;
+                newBanBlueSide[0] = `https://ddragon.leagueoflegends.com/cdn/${patch}/img/champion/${temporarySelection.name}.png`;
                 setBanBlueSide(newBanBlueSide);
             } else if (currentBanRound === 1) {
-                newBanRedSide[4] = `https://ddragon.leagueoflegends.com/cdn/14.14.1/img/champion/${temporarySelection.name}.png`;
+                newBanRedSide[4] = `https://ddragon.leagueoflegends.com/cdn/${patch}/img/champion/${temporarySelection.name}.png`;
                 setBanRedSide(newBanRedSide);
             } else if (currentBanRound === 2) {
-                newBanBlueSide[1] = `https://ddragon.leagueoflegends.com/cdn/14.14.1/img/champion/${temporarySelection.name}.png`;
+                newBanBlueSide[1] = `https://ddragon.leagueoflegends.com/cdn/${patch}/img/champion/${temporarySelection.name}.png`;
                 setBanBlueSide(newBanBlueSide);
             } else if (currentBanRound === 3) {
-                newBanRedSide[3] = `https://ddragon.leagueoflegends.com/cdn/14.14.1/img/champion/${temporarySelection.name}.png`;
+                newBanRedSide[3] = `https://ddragon.leagueoflegends.com/cdn/${patch}/img/champion/${temporarySelection.name}.png`;
                 setBanRedSide(newBanRedSide);
             } else if (currentBanRound === 4) {
-                newBanBlueSide[2] = `https://ddragon.leagueoflegends.com/cdn/14.14.1/img/champion/${temporarySelection.name}.png`;
+                newBanBlueSide[2] = `https://ddragon.leagueoflegends.com/cdn/${patch}/img/champion/${temporarySelection.name}.png`;
                 setBanBlueSide(newBanBlueSide);
             } else if (currentBanRound === 5) {
-                newBanRedSide[2] = `https://ddragon.leagueoflegends.com/cdn/14.14.1/img/champion/${temporarySelection.name}.png`;
+                newBanRedSide[2] = `https://ddragon.leagueoflegends.com/cdn/${patch}/img/champion/${temporarySelection.name}.png`;
                 setBanRedSide(newBanRedSide);
             } else if (currentBanRound === 6) {
-                newPickBlueSide[0] = `https://ddragon.leagueoflegends.com/cdn/14.14.1/img/champion/${temporarySelection.name}.png`;
+                newPickBlueSide[0] = `https://ddragon.leagueoflegends.com/cdn/${patch}/img/champion/${temporarySelection.name}.png`;
                 setPickBlueSide(newPickBlueSide);
             } else if (currentBanRound === 7) {
-                newPickRedSide[0] = `https://ddragon.leagueoflegends.com/cdn/14.14.1/img/champion/${temporarySelection.name}.png`;
+                newPickRedSide[0] = `https://ddragon.leagueoflegends.com/cdn/${patch}/img/champion/${temporarySelection.name}.png`;
                 setPickRedSide(newPickRedSide);
             } else if (currentBanRound === 8) {
-                newPickRedSide[1] = `https://ddragon.leagueoflegends.com/cdn/14.14.1/img/champion/${temporarySelection.name}.png`;
+                newPickRedSide[1] = `https://ddragon.leagueoflegends.com/cdn/${patch}/img/champion/${temporarySelection.name}.png`;
                 setPickRedSide(newPickRedSide);
             } else if (currentBanRound === 9) {
-                newPickBlueSide[1] = `https://ddragon.leagueoflegends.com/cdn/14.14.1/img/champion/${temporarySelection.name}.png`;
+                newPickBlueSide[1] = `https://ddragon.leagueoflegends.com/cdn/${patch}/img/champion/${temporarySelection.name}.png`;
                 setPickBlueSide(newPickBlueSide);
             } else if (currentBanRound === 10) {
-                newPickBlueSide[2] = `https://ddragon.leagueoflegends.com/cdn/14.14.1/img/champion/${temporarySelection.name}.png`;
+                newPickBlueSide[2] = `https://ddragon.leagueoflegends.com/cdn/${patch}/img/champion/${temporarySelection.name}.png`;
                 setPickBlueSide(newPickBlueSide);
             } else if (currentBanRound === 11) {
-                newPickRedSide[2] = `https://ddragon.leagueoflegends.com/cdn/14.14.1/img/champion/${temporarySelection.name}.png`;
+                newPickRedSide[2] = `https://ddragon.leagueoflegends.com/cdn/${patch}/img/champion/${temporarySelection.name}.png`;
                 setPickRedSide(newPickRedSide);
             } else if (currentBanRound === 12) {
-                newBanRedSide[1] = `https://ddragon.leagueoflegends.com/cdn/14.14.1/img/champion/${temporarySelection.name}.png`;
+                newBanRedSide[1] = `https://ddragon.leagueoflegends.com/cdn/${patch}/img/champion/${temporarySelection.name}.png`;
                 setBanRedSide(newBanRedSide);
             } else if (currentBanRound === 13) {
-                newBanBlueSide[3] = `https://ddragon.leagueoflegends.com/cdn/14.14.1/img/champion/${temporarySelection.name}.png`;
+                newBanBlueSide[3] = `https://ddragon.leagueoflegends.com/cdn/${patch}/img/champion/${temporarySelection.name}.png`;
                 setBanBlueSide(newBanBlueSide);
             } else if (currentBanRound === 14) {
-                newBanRedSide[0] = `https://ddragon.leagueoflegends.com/cdn/14.14.1/img/champion/${temporarySelection.name}.png`;
+                newBanRedSide[0] = `https://ddragon.leagueoflegends.com/cdn/${patch}/img/champion/${temporarySelection.name}.png`;
                 setBanRedSide(newBanRedSide);
             } else if (currentBanRound === 15) {
-                newBanBlueSide[4] = `https://ddragon.leagueoflegends.com/cdn/14.14.1/img/champion/${temporarySelection.name}.png`;
+                newBanBlueSide[4] = `https://ddragon.leagueoflegends.com/cdn/${patch}/img/champion/${temporarySelection.name}.png`;
                 setBanBlueSide(newBanBlueSide);
             } else if (currentBanRound === 16) {
-                newPickRedSide[3] = `https://ddragon.leagueoflegends.com/cdn/14.14.1/img/champion/${temporarySelection.name}.png`;
+                newPickRedSide[3] = `https://ddragon.leagueoflegends.com/cdn/${patch}/img/champion/${temporarySelection.name}.png`;
                 setPickRedSide(newPickRedSide);
             } else if (currentBanRound === 17) {
-                newPickBlueSide[3] = `https://ddragon.leagueoflegends.com/cdn/14.14.1/img/champion/${temporarySelection.name}.png`;
+                newPickBlueSide[3] = `https://ddragon.leagueoflegends.com/cdn/${patch}/img/champion/${temporarySelection.name}.png`;
                 setPickBlueSide(newPickBlueSide);
             } else if (currentBanRound === 18) {
-                newPickBlueSide[4] = `https://ddragon.leagueoflegends.com/cdn/14.14.1/img/champion/${temporarySelection.name}.png`;
+                newPickBlueSide[4] = `https://ddragon.leagueoflegends.com/cdn/${patch}/img/champion/${temporarySelection.name}.png`;
                 setPickBlueSide(newPickBlueSide);
             } else if (currentBanRound === 19) {
-                newPickRedSide[4] = `https://ddragon.leagueoflegends.com/cdn/14.14.1/img/champion/${temporarySelection.name}.png`;
+                newPickRedSide[4] = `https://ddragon.leagueoflegends.com/cdn/${patch}/img/champion/${temporarySelection.name}.png`;
                 setPickRedSide(newPickRedSide);
             }
 
@@ -245,7 +246,7 @@ const Champion = () => {
                     {filteredChampions && filteredChampions.map((champ, index) => (
                         <div key={champ.id}>
                             <img 
-                                src={`https://ddragon.leagueoflegends.com/cdn/14.14.1/img/champion/${champ.name}.png`} 
+                                src={`https://ddragon.leagueoflegends.com/cdn/${patch}/img/champion/${champ.name}.png`} 
                                 onClick={() => !champ.selected && seeIndex(champ)}
                                 key={index} 
                                 alt="" 
