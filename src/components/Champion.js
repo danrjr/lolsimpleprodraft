@@ -172,7 +172,7 @@ const Champion = () => {
             } else if (currentBanRound === 9) {
                 newPickBlueSide[1] = `https://ddragon.leagueoflegends.com/cdn/14.14.1/img/champion/${temporarySelection.name}.png`;
                 setPickBlueSide(newPickBlueSide);
-            } else if (currentBanRound === 14) {
+            } else if (currentBanRound === 10) {
                 newPickBlueSide[2] = `https://ddragon.leagueoflegends.com/cdn/14.14.1/img/champion/${temporarySelection.name}.png`;
                 setPickBlueSide(newPickBlueSide);
             } else if (currentBanRound === 11) {
