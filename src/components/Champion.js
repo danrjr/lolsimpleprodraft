@@ -21,7 +21,7 @@ const Champion = () => {
         { name: "bottom", code: '21509e3883c16b6fc3d0' },
         { name: "utility", code: 'c5a52aaac8d51b65adf7' }
     ]);
-    const patch = "14.14.1";
+    const patch = "14.24.1";
 
     const [champion, setChampion] = useState([]);
     const [selectedChampion, setSelectedChampion] = useState(null); // Estado para o campeão selecionado
@@ -245,6 +245,7 @@ const Champion = () => {
                 <div className="champion_imgs">
                     {filteredChampions && filteredChampions.map((champ, index) => (
                         <div key={champ.id}>
+                            <>
                             <img 
                                 src={`https://ddragon.leagueoflegends.com/cdn/${patch}/img/champion/${champ.name}.png`} 
                                 onClick={() => !champ.selected && seeIndex(champ)}
@@ -252,6 +253,8 @@ const Champion = () => {
                                 alt="" 
                                 className={champ.selected ? 'selected' : ''} 
                             />
+                            <p className="champ_names">{champ.name === "MonkeyKing" ? "Wukong" : champ.name}</p>
+                            </>
                         </div>
                     ))}
                 </div>

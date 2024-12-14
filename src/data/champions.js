@@ -1,9 +1,11 @@
+
 export const data = [
     {name: "Aatrox", roles: ['top'], id: 0},
     {name: "Ahri", roles: ['middle'], id: 1},
     {name: "Akali", roles: ['top', 'middle'], id: 2},
     {name: "Akshan", roles: ['top', 'bottom'], id: 3},
     {name: "Alistar", roles: ['utility'], id: 4},
+    {name: "Ambessa", roles: ['top', 'middle', 'jungle'], id: 171},
     {name: "Amumu", roles: ['jungle'], id: 5},
     {name: "Anivia", roles: ['middle'], id: 6},
     {name: "Annie", roles: ['middle'], id: 7},
@@ -31,7 +33,7 @@ export const data = [
     {name: "Elise", roles: ['jungle'], id: 28},
     {name: "Evelynn", roles: ['jungle'], id: 29},
     {name: "Ezreal", roles: ['bottom'], id: 30},
-    {name: "FiddleSticks", roles: ['jungle'], id: 31},
+    {name: "Fiddlesticks", roles: ['jungle'], id: 31},
     {name: "Fiora", roles: ['top'], id: 32},
     {name: "Fizz", roles: ['middle'], id: 33},
     {name: "Galio", roles: ['middle'], id: 34},
@@ -152,7 +154,7 @@ export const data = [
     {name: "Vladimir", roles: ['top'], id: 152},
     {name: "Volibear", roles: ['top','jungle'], id: 153},
     {name: "Warwick", roles: ['jungle'], id: 154},
-    {name: "Wukong", roles: ['jungle'], id: 155},
+    {name: "MonkeyKing", roles: ['jungle'], id: 155},
     {name: "Xayah", roles: ['bottom'], id: 156},
     {name: "Xerath", roles: ['middle', 'utility'], id: 157},
     {name: "XinZhao", roles: ['jungle'], id: 158},
@@ -168,3 +170,12 @@ export const data = [
     {name: "Zoe", roles: ['middle'], id: 168},
     {name: "Zyra", roles: ['utility'], id: 169}
 ]       
+
+let maiorId = 0
+for (let i = 0; i < data.length; i++) {
+    if (data[i].id > maiorId) {
+        maiorId = data[i].id
+    }
+}
+
+console.log(maiorId)

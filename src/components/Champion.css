@@ -190,3 +190,8 @@
 .champion_search input::placeholder {
     color: #999; /* Cor do placeholder */
 }
+
+.champ_names{
+    color: white; 
+    text-align: center;
+}
