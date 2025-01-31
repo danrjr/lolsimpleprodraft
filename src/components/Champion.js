@@ -21,7 +21,7 @@ const Champion = () => {
         { name: "bottom", code: '21509e3883c16b6fc3d0' },
         { name: "utility", code: 'c5a52aaac8d51b65adf7' }
     ]);
-    const patch = "14.24.1";
+    const patch = "15.2.1";
 
     const [champion, setChampion] = useState([]);
     const [selectedChampion, setSelectedChampion] = useState(null); // Estado para o campeão selecionado

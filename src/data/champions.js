@@ -81,6 +81,7 @@ export const data = [
     {name: "Malzahar", roles: ['middle'], id: 76},
     {name: "Maokai", roles: ['jungle'], id: 77},
     {name: "MasterYi", roles: ['jungle'], id: 78},
+    {name: "Mel", roles: ['utility', 'middle'], id: 172},
     {name: "Milio", roles: ['utiity'], id: 79},
     {name: "MissFortune", roles: ['bottom'], id: 80},
     {name: "Mordekaiser", roles: ['top'], id: 81},
